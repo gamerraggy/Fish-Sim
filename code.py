@@ -17,7 +17,7 @@ class Fish:
         self.speed = 1
         self.xDir = -1
         self.yDir = random.randint(-1,1)
-        self.last_change_time = time.time() #grab starting time
+        self.last_change_time = time.time() #grab starting time 
 
     def move(self): 
         # Move the fish
