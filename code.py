@@ -24,10 +24,10 @@ class Fish:
         self.xpos += self.xDir* self.speed 
 
         # Check for collision with walls and change direction
-        if self.xpos <= 0:
-            self.xpos == 800
+        if self.xpos <= -75:
+            self.xpos = 870
         if self.ypos <= 0 or self.ypos>= 550:
-            self.ypos == 300
+            self.ypos = 300
 
     def draw(self, screen):
         screen.blit(self.fishImage, (self.xpos, self.ypos))
