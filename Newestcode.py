@@ -86,7 +86,7 @@ class Snowflake:#constructor for class snowflake
         if self.ypos == 0:#resets the snowflake's position to the top of the screen once it's reached the bottom
             self.ypos = random.randrange(599, 600)#creates a snowflake and puts it in the list
     def draw(self):
-        pygame.draw.circle(screen, (54, 110, 193), (self.xpos, self.ypos),3) #draws every snowflake in the list
+        pygame.draw.circle(screen, (54, 110, 193), (self.xpos, self.ypos),10, 1) #draws every snowflake in the list
 
 flakeBag = []
 for i in range(500):
